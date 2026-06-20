@@ -3,19 +3,15 @@
  * @return {Function}
  */
 function memoize(fn) {
-    // Create a cache map to store previous results
     const cache = new Map();
     
     return function(...args) {
-        // Convert the arguments array into a unique string key
         const key = JSON.stringify(args);
         
-        // If the key exists, return the cached result immediately
         if (cache.has(key)) {
             return cache.get(key);
         }
         
-        // Otherwise, execute the function, store it, and return it
         const result = fn(...args);
         cache.set(key, result);
         return result;
