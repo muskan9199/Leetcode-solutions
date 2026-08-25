@@ -1,5 +1,5 @@
 # [Count Prefix-Balanced Binary Strings](https://www.geeksforgeeks.org/problems/geek-and-his-binary-strings1951/1)
-## Easy
+## Medium
 Given an integer n, count the number of binary strings of length 2 * n that contain exactly n ones and n zeros such that every prefix of the string contains at least as many ones as zeros. Since the answer can be very large, return it modulo 109 + 7.
 Examples:
 Input: n = 2
